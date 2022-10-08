@@ -1,0 +1,3 @@
+$0000 : Zerro               : 2 bytes : D:\Projects\WalkingLight\Firmwares\mcu\main.alp
+$0002 : EE_Effect_Set_Table : 1 bytes : D:\Projects\WalkingLight\Firmwares\mcu\Stairs.alg
+$0022 : EE_Preset_Table     : 1 bytes : D:\Projects\WalkingLight\Firmwares\mcu\Stairs.alg

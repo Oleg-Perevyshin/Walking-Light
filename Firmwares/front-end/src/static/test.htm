@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<title>Test WebSocket</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	</head>
+	<body>
+		<br/>
+		<br>
+		Send: <input id="sen" type="range" min="0" max="15" step="1" oninput="sendWebSocket();"/>
+		<br/>
+		<br/>
+		Received: <span id="res" type="text"></span>
+
+		<script>
+        let res, sen;
+        const connection = new WebSocket('ws://'+location.hostname+'/ws', ['soi-tech']);
+        connection.onopen = () => {  };
+        connection.onerror = e => { console.error(e); };
+        connection.onmessage = r => {
+            res = r.data;
+            document.getElementById('res').innerHTML = res;
+        };
+        function sendWebSocket() {
+            sen = document.getElementById('sen').value;
+            connection.send(sen);
+        }
+		</script>
+	</body>
+</html>

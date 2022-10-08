@@ -1,0 +1,97 @@
+[Chip]
+Name=ATmega328P
+[CPU]
+Clock Frequency=16000000
+[Text reports]
+Generate lst-file=1
+[Monitor chip]
+Using pin=14
+[Template]
+K_to_Z_Interpretation=1
+[Fuse bits]
+CKSEL0=1
+CKSEL1=1
+CKSEL2=1
+CKSEL3=1
+SUT0=1
+SUT1=1
+CKOUT=1
+CKDIV8=1
+BODLEVEL0=0
+BODLEVEL1=1
+BODLEVEL2=0
+EESAVE=1
+WDTON=1
+SPIEN=0
+DWEN=1
+RSTDISBL=1
+BOOTRST=0
+BOOTSZ0=0
+BOOTSZ1=1
+[Lock bits]
+LockBit1=1
+LockBit2=1
+BootLockBit01=1
+BootLockBit02=1
+BootLockBit11=1
+BootLockBit12=1
+[TemplatesForm]
+Opened=0
+Left=50
+Top=50
+[EEMacroOptions]
+WaitEEWEBefore=0
+LockGlobalInterrupt=0
+[SRAM]
+External=0
+[Programmer]
+Counter=77
+Check device=1
+Chip erase=1
+Write to program=1
+Write to EEPROM=0
+Copy calibration byte=0
+Write fuse bits=1
+Write lock bits=0
+Close on completion=1
+Calibration byte address=0
+Calibration byte EEPROM address=0
+[Program]
+Fill value=0
+[Chip reader]
+Flash file name=
+EEPROM file name=
+[Compiler]
+Auto declaring fragments of working registers=1
+Optimization=1
+Round immediate data=1
+[Debug]
+Configuration=0
+[Port]
+Deceleration=0
+[Control]
+Read only=0
+[MainWindow]
+Left=0
+Top=0
+Width=2048
+Height=1071
+[Pages]
+Page1=Programm.alg
+Page2=Wait.alg
+Page3=PWM.alg
+Page4=RND.alg
+Page5=Math.alg
+Page6=EX_Key.alg
+Page7=UART.alg
+Page8=STimer.alg
+Page9=ssd1306.alg
+Page10=Print.alg
+Page11=PrintU.alg
+Page12=Logic.alg
+Page13=Stairs.alg
+Page14=Menu.alg
+Page15=Menu_Struct.alg
+Page16=Effects.alg
+Page17=EDisp.alg
+Page18=wlParse.alg

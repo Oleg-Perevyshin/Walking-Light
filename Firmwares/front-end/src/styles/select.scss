@@ -1,0 +1,9 @@
+.select {
+	padding: .2em 0;
+	display: inline-block;
+	min-width: 5em;
+	user-select: none;
+	cursor: pointer;
+	overflow: auto;
+	transition: all 0.2s ease-in-out;
+}

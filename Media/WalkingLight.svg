@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" height="100" width="100">
+	<style>
+		circle,path{fill:none}
+		.a{stroke:#777}
+		.b{stroke:#fc3}
+		.c{stroke-width:2}
+		.d{stroke-width:5}
+		.e{stroke-linecap:round}
+		.f{paint-order:stroke fill markers}
+	</style>
+	<circle class="b f" cx="50" cy="50" r="46.5" stroke-width="7"/>
+	<circle class="f" cx="50" cy="50" r="49.5" stroke="#555" stroke-width="1"/>
+	<path class="a d e" d="M20.883 24.65l24.187.162M32.23 34.72l27.285.16M39.162 44.788l34.33.162M39.367 54.857l43.818.16M32.1 65.006l52.1.162M20.94 74.994l58.513.162"/>
+	<path class="b c e" d="M20.883 23.155l24.187.16M32.23 33.223l27.285.162M39.162 43.292l34.33.162M39.367 53.36l43.818.162M32.1 63.51l52.1.162M20.94 73.498l58.513.162"/>
+	<path class="a c e" d="M72.098 60.107c24.956-22.503-.4-36.265-24.387-49.858M55.47 32.325V15.28M70.735 42.312V25.325M77.082 72.573V55.48"/>
+</svg>

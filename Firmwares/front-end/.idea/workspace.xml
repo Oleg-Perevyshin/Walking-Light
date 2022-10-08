@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f087fb14-2d79-4e9d-bd81-894df5d65a08" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-end/data/dl/ru.json.gz" beforeDir="false" afterPath="$PROJECT_DIR$/../back-end/data/dl/ru.json.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-end/data/main.js.gz" beforeDir="false" afterPath="$PROJECT_DIR$/../back-end/data/main.js.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-end/data/style.css.gz" beforeDir="false" afterPath="$PROJECT_DIR$/../back-end/data/style.css.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-end/progMemory.h" beforeDir="false" afterPath="$PROJECT_DIR$/../back-end/progMemory.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/themes.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/themes.scss" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>false</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>false</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="ProjectId" id="1jgEMUOyHDv90qyACyFRno8V1Rg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="build-gz" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build-gz" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.build-gz" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f087fb14-2d79-4e9d-bd81-894df5d65a08" name="Default" comment="" />
+      <created>1521782225653</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1521782225653</updated>
+      <workItem from="1521782226931" duration="619000" />
+      <workItem from="1529565638717" duration="380000" />
+      <workItem from="1604217290398" duration="646000" />
+      <workItem from="1604219768870" duration="298000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1167" height="221" key="GridCell.Tab.0.bottom" timestamp="1604217937047">
+      <screen x="0" y="23" width="2560" height="1373" />
+    </state>
+    <state width="1167" height="221" key="GridCell.Tab.0.bottom/0.23.2560.1373/2560.320.1792.1120@0.23.2560.1373" timestamp="1604217937047" />
+    <state width="1167" height="221" key="GridCell.Tab.0.center" timestamp="1604217937047">
+      <screen x="0" y="23" width="2560" height="1373" />
+    </state>
+    <state width="1167" height="221" key="GridCell.Tab.0.center/0.23.2560.1373/2560.320.1792.1120@0.23.2560.1373" timestamp="1604217937047" />
+    <state width="1167" height="221" key="GridCell.Tab.0.left" timestamp="1604217937046">
+      <screen x="0" y="23" width="2560" height="1373" />
+    </state>
+    <state width="1167" height="221" key="GridCell.Tab.0.left/0.23.2560.1373/2560.320.1792.1120@0.23.2560.1373" timestamp="1604217937046" />
+    <state width="1167" height="221" key="GridCell.Tab.0.right" timestamp="1604217937047">
+      <screen x="0" y="23" width="2560" height="1373" />
+    </state>
+    <state width="1167" height="221" key="GridCell.Tab.0.right/0.23.2560.1373/2560.320.1792.1120@0.23.2560.1373" timestamp="1604217937047" />
+  </component>
+</project>

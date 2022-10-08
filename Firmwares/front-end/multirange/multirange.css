@@ -1,0 +1,47 @@
+@supports (--css: variables) {
+	input[type="range"].rangeMul {
+		padding: 0;
+		margin: 0;
+		vertical-align: top;
+		display: block;
+    pointer-events: none;
+    -webkit-appearance: none;
+    height: .1em;
+    background-color: #AAAAAA;
+	}
+
+	input[type="range"].rangeMul:hover,
+	input[type="range"].rangeMul:focus {
+		outline: none;
+	}
+
+	input[type="range"].rangeMul.min,
+	input[type="range"].rangeMul.max {
+		position: absolute;
+	}
+	input[type="range"].rangeMul.max {
+		position: relative;
+		background: var(--track-background);
+		--track-background: linear-gradient(to right, transparent var(--low), var(--range-color) 0, var(--range-color) var(--high), transparent 0) no-repeat 0 50% / 100% 25%;
+		--range-color: #55BBFF;
+	}
+
+	input[type="range"].rangeMul.min::-webkit-slider-thumb,
+	input[type="range"].rangeMul.max::-webkit-slider-thumb {
+		position: relative;
+		z-index: 2;
+		pointer-events: all;
+		-webkit-appearance: none;
+		background-color: #FFFFFF;
+		width: 1.5em;
+		height: 1.5em;
+		border: .2em solid #55BBFF;
+		border-radius: 1.5em;
+		cursor: pointer;
+	}
+
+
+	input[type="range"].rangeMul.max::-webkit-slider-runnable-track {
+		background: var(--track-background);
+	}
+}
