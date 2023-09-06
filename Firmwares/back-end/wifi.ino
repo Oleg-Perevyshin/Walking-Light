@@ -104,23 +104,3 @@ void checkConnect() {
     flagWConnect = false;
   }
 }
-
-
-
-
-
-// ПЕРЕДАЧА ДАННЫХ НА СЕРВЕР SOI-TECH
-void backUpConfig() {
-  String request = "http://updates.soi-tech.com/WalkingLight/backUp/?";
-  request += WiFi.macAddress().c_str();
-  String answer = "";
-  Serial.println(request);
-  HTTPClient http;
-  http.begin(request);
-  int httpCode = http.GET();
-  if (httpCode == HTTP_CODE_OK) {
-    answer = http.getString();
-  }
-  http.end();
-  Serial.println(answer);
-}

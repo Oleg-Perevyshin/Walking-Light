@@ -1,26 +1,24 @@
-
-
 // ================================================================================ //
 // WIFI МОДУЛЬ WalkingLight                                                         //
-// Ядро https://github.com/esp8266/Arduino                                          //
+// Ядро https://github.com/esp8266/Arduino                              3.1.2       //
 // Загрузчик FS https://github.com/esp8266/arduino-esp8266fs-plugin                 //
-// JSON https://github.com/bblanchon/ArduinoJson                                    //
+// JSON https://github.com/bblanchon/ArduinoJson                        6.21.3      //
 // ESPAsyncWebServer https://github.com/me-no-dev/ESPAsyncWebServer                 //
 // ESPAsyncTCP https://github.com/me-no-dev/ESPAsyncTCP                             //
 // ESPAsyncUDP https://github.com/me-no-dev/ESPAsyncUDP                             //
 // ================================================================================ //
 
-
-#include <ESP8266WiFi.h>          // Ядро WiFi
-#include <ESP8266HTTPClient.h>
 #include <ESPAsyncWebServer.h>
+#include <ESP8266WiFi.h>
+#include <ESP8266HTTPClient.h>
 #include <ESPAsyncUDP.h>
 #include <ArduinoJson.h>
 #include <Ticker.h>
 #include <StreamString.h>
+#include <FS.h>
+#include <WiFiClient.h>
 
 // СЛУЖЕБНЫЕ ПАРАМЕТРЫ
-#define STATUS_LED_PIN      12                // D6
 #define STATUS_LED_PIN      2                 // D4
 #define MCU_RESTART_PIN     5                 // D1
 #define DEVICE_ID           "28"              // Device ID                (Идентификатор устройства по каталогу, представление в HEX)

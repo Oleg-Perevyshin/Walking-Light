@@ -50,7 +50,7 @@ void serverInit() {
       uint32_t chipId = ESP.getChipId();
       output.printf(
         ssdpTemplate,
-        IP2STR(&ip),                        // URLBase            (IP адрес устройства)
+//        IP2STR(&ip),                        // URLBase            (IP адрес устройства)
         DEVICE_MODEL, dn,                   // friendlyName       (WalkingLight | Пользовательское имя)
         VENDOR,                             // manufacturer       (SOI Tech)
         VENDOR_URL,                         // manufacturerURL    (http://www.soi-tech.com/)
@@ -67,11 +67,6 @@ void serverInit() {
       request->send(500);
   });
 
-//  server.on("/vcc", HTTP_GET, [](AsyncWebServerRequest * request) {
-//    float vccVolt = ((float)ESP.getVcc())/1024;
-//    request->send(200, "text/plain", vccVolt);
-//  });
-  
   // INDEX.HTM
   server.on("/", HTTP_GET, [](AsyncWebServerRequest * request) {
     if (!request->authenticate(du, dp))
@@ -310,7 +305,7 @@ void serverInit() {
 //      JsonObject& script = it->as<JsonObject>();
 //      int enabled = script["enabled"].as<bool>() ? 1 : 0;
 //      char custom_param[5];
-//      const char *custom_param_in = script["custom_param"].as<char*>();
+//      const char *custom_param_in = script["custom_param"].as<const char*>();
 //      int custom_param_pos = 0, custom_param_in_pos = 0;
 //      while (custom_param_pos < 8) {
 //        if ('0' <= custom_param_in[custom_param_in_pos] <= '9') {
@@ -320,7 +315,7 @@ void serverInit() {
 //        custom_param_in_pos++;
 //      }
 //      custom_param[custom_param_pos] = '\0';
-//      snf.printf("%s\n", script["name"].as<char*>());
+//      snf.printf("%s\n", script["name"].as<const char*>());
 //      JsonArray& eventsArray = script["events"].as<JsonArray>();
 //      char events[256] = "";
 //      bool first_e = true;
@@ -329,7 +324,7 @@ void serverInit() {
 //          strncat(events, ":", sizeof(events) - 1 - strlen(events));
 //        first_e = false;
 //        JsonObject& eventsObject = eit->as<JsonObject>();
-//        snprintf(events, sizeof(events), "%s%s:", events, eventsObject["da"].as<char*>());
+//        snprintf(events, sizeof(events), "%s%s:", events, eventsObject["da"].as<const char*>());
 //        JsonArray& eventsParamArray = eventsObject["params"].as<JsonArray>();
 //        bool first_ep = true;
 //        for (JsonArray::iterator epit = eventsParamArray.begin(); epit != eventsParamArray.end(); ++epit) {
@@ -351,7 +346,7 @@ void serverInit() {
 //          strncat(actions, ":", sizeof(actions) - 1 - strlen(actions));
 //        first_a = false;
 //        JsonObject& actionsObject = ait->as<JsonObject>();
-//        snprintf(actions, sizeof(actions), "%s%s:", actions, actionsObject["da"].as<char*>());
+//        snprintf(actions, sizeof(actions), "%s%s:", actions, actionsObject["da"].as<const char*>());
 //        JsonArray& actionsParamArray = actionsObject["params"].as<JsonArray>();
 //        bool first_ap = true;
 //        for (JsonArray::iterator apit = actionsParamArray.begin(); apit != actionsParamArray.end(); ++apit) {
@@ -361,7 +356,7 @@ void serverInit() {
 //          JsonArray& action_params = apit->as<JsonArray>();
 //          snprintf(
 //            actions, sizeof(actions), "%s%s.%s",
-//            actions, action_params[0].as<char*>(), action_params[1].as<char*>()
+//            actions, action_params[0].as<const char*>(), action_params[1].as<const char*>()
 //          );
 //        }
 //      }

@@ -68,20 +68,37 @@ void otaAvailable() {
   }
 }
 
+// ПЕРЕДАЧА ДАННЫХ НА СЕРВЕР SOI-TECH ДЛЯ BACKUP
+void backUpConfig() {
+  WiFiClient client;
+  HTTPClient httpClient;
+  httpClient.useHTTP10(true);
+  httpClient.setTimeout(5000);
+  char request[128];
+  sprintf(request, "http://%s/%s/%s/backUp/?", OTA_HOST, DEVICE_MODEL, WiFi.macAddress().c_str());
+  String answer = "";
+  Serial.println(request);
+  httpClient.begin(client, request);
+  if (httpClient.GET() == HTTP_CODE_OK) {
+    answer = httpClient.getString();
+  }
+  httpClient.end();
+  Serial.println(answer);
+}
 
 // ОБНОВЛЕНИЕ FS И ПРОШИВКИ ESP
 bool _otaUpdate(bool spiffs) {
   ledBlinkTicker.attach(0.1, blinkLed);
   Serial.println(spiffs ? "Updating SPIFFS" : "Updating FLASH");
+  WiFiClient client;
   HTTPClient httpClient;
   httpClient.useHTTP10(true);
   httpClient.setTimeout(5000);
   char url[128];
   sprintf(url, "http://%s/%s-%d-%s.bin", OTA_HOST, DEVICE_MODEL, latVer, spiffs ? "fs" : "esp");
-  httpClient.begin(url);
-  int code = httpClient.GET();
-  if (code != HTTP_CODE_OK) {
-    Serial.printf("%d | Unable to fetch update %s\r\n", code, url);
+  httpClient.begin(client, url);
+  if (httpClient.GET() != HTTP_CODE_OK) {
+    Serial.printf("Unable to fetch update %s\r\n", url);
     httpClient.end();
     return false;
   }
@@ -119,7 +136,6 @@ void otaUpdate() {
   ledBlinkTicker.detach();
   uartSendHAD("SYS", "restart", NULL);
 }
-
 
 // ======================================== //
 // ПРОВЕРКА НАЛИЧИЯ ОБНОВЛЕНИЯ (HTTPS + FP) //
